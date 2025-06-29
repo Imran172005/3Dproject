@@ -39,9 +39,8 @@
     }
 
     .main-logo {
-      width: 355px;  /* Logo width */
+      width: 355px;
       height: auto;
-/*       margin-bottom: 1rem; */
     }
 
     header h1 {
@@ -149,6 +148,24 @@
       background: #e67e22;
     }
 
+    .call-button,
+    .whatsapp-button {
+      background-color: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .call-button:hover,
+    .whatsapp-button:hover {
+      background-color: #e67e22;
+    }
+
     footer {
       background: var(--primary);
       color: white;
@@ -178,8 +195,7 @@
 
   <header>
     <div class="header-content">
-      <img src="/20241021_165505.png" alt="3D World Logo" class="main-logo" style="margin-left:  10px;"/>
-     
+      <img src="/20241021_165505.png" alt="3D World Logo" class="main-logo" />
       <p>घर बांधण्यापूर्वी अनुभवा प्रत्यक्षात तुमचे घर 3D डिझाईनच्या मदतीने!</p>
     </div>
   </header>
@@ -191,26 +207,11 @@
   <section class="services">
     <h2>Our Services</h2>
     <div class="service-grid">
-      <div class="service-item">
-        <h3>2D Plan</h3>
-        <p>Professional and accurate floor planning.</p>
-      </div>
-      <div class="service-item">
-        <h3>3D Design</h3>
-        <p>High-quality 3D views before construction starts.</p>
-      </div>
-      <div class="service-item">
-        <h3>Interior Design</h3>
-        <p>Custom interior concepts for modern living.</p>
-      </div>
-      <div class="service-item">
-        <h3>Centerline Plan</h3>
-        <p>Essential layout for foundation and columns.</p>
-      </div>
-      <div class="service-item">
-        <h3>Cut View</h3>
-        <p>Detailed section cut views for clarity.</p>
-      </div>
+      <div class="service-item"><h3>2D Plan</h3><p>Professional and accurate floor planning.</p></div>
+      <div class="service-item"><h3>3D Design</h3><p>High-quality 3D views before construction starts.</p></div>
+      <div class="service-item"><h3>Interior Design</h3><p>Custom interior concepts for modern living.</p></div>
+      <div class="service-item"><h3>Centerline Plan</h3><p>Essential layout for foundation and columns.</p></div>
+      <div class="service-item"><h3>Cut View</h3><p>Detailed section cut views for clarity.</p></div>
     </div>
   </section>
 
@@ -239,14 +240,15 @@
       <a href="2D-more-designs.html" class="show-more-btn">View More Plane</a>
     </div>
   </section>
-  
-<section class="gallery">
+
+  <section class="gallery">
     <h2>Line Out Gallery</h2>
     <div class="gallery-grid">
       <img src="/2D/7.jpg" alt="2D Design 1" />
       <img src="/2D/8.jpg" alt="2D Design 2" />
     </div>
   </section>
+
   <section class="gallery">
     <h2>Cut Views</h2>
     <div class="gallery-grid">
@@ -254,6 +256,15 @@
       <img src="/cut_view/2.jpg" alt="Cut View 2" />
     </div>
   </section>
+   
+  <!-- Contact Buttons Section -->
+  <div style="text-align: center; margin: 2rem 1rem;">
+  <h2 style="color: var(--primary); margin-bottom: 1rem;">
+    एक्स्टिरिअर/इंटेरिअर 3D डिझाईनसाठी आजच कॉल करा...
+  </h2>
+  <a href="tel:8999954374" class="call-button" style="margin-bottom: 10px;">📞 Call Now</a>
+  <a href="https://wa.me/918999954374" target="_blank" class="whatsapp-button" style="margin-left: 10px;">💬 Chat on WhatsApp</a>
+</div>
 
   <footer>
     <p>Contact: 8999954374</p>
