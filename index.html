@@ -23,46 +23,56 @@
       color: var(--text);
       line-height: 1.6;
     }
-    .main-logo {
-   width: 355px;      /* Increased width */
-  height: auto;     /* Maintains aspect ratio */
-  margin-bottom: 1rem;
-  }
+
     header {
       background: var(--primary);
       color: white;
       text-align: center;
       padding: 2rem 1rem;
-      position: relative;
     }
-    header img.logo {
-      width: 80px;
-      position: absolute;
-      top: 20px;
-      left: 20px;
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
+
+    .main-logo {
+      width: 355px;  /* Logo width */
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
     header h1 {
       font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
     }
+
     header p {
-      margin-top: 0.5rem;
       font-size: 1.2rem;
+      color: #fff;
     }
+
     .poster {
       text-align: center;
       margin: 2rem 0;
       animation: fadeIn 1.5s ease-in-out;
     }
+
     .poster img {
       max-width: 95%;
       border-radius: 1rem;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
+
     .services {
       max-width: 1000px;
       margin: auto;
       padding: 2rem 1rem;
     }
+
     .services h2 {
       text-align: center;
       color: var(--primary);
@@ -70,11 +80,13 @@
       font-size: 2rem;
       animation: slideDown 1s ease-in-out;
     }
+
     .service-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.5rem;
     }
+
     .service-item {
       background: white;
       border-radius: 1rem;
@@ -84,36 +96,42 @@
       transition: transform 0.3s;
       animation: zoomIn 0.8s ease;
     }
+
     .service-item:hover {
       transform: translateY(-5px);
     }
+
     .service-item h3 {
       color: var(--accent);
       margin-bottom: 0.75rem;
     }
+
     .gallery {
       max-width: 1100px;
       margin: 2rem auto;
       padding: 1rem;
       text-align: center;
     }
+
     .gallery h2 {
       margin-bottom: 1.5rem;
       color: var(--primary);
       animation: slideDown 1s ease-in-out;
     }
+
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
     }
+
     .gallery-grid img {
       width: 100%;
       border-radius: 0.75rem;
       box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
       animation: fadeIn 1.5s ease;
     }
-    /* Show‑More Button */
+
     .show-more-btn {
       background: var(--accent);
       color: #fff;
@@ -123,10 +141,14 @@
       font-size: 1rem;
       cursor: pointer;
       transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
     }
+
     .show-more-btn:hover {
       background: #e67e22;
     }
+
     footer {
       background: var(--primary);
       color: white;
@@ -140,10 +162,12 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     @keyframes slideDown {
       from { transform: translateY(-20px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
+
     @keyframes zoomIn {
       from { transform: scale(0.8); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
@@ -151,14 +175,17 @@
   </style>
 </head>
 <body>
+
   <header>
-    <!-- <img src="logo/your-logo.png" alt="3D World Logo" class="logo" /> -->
-         <img src="/20241021_165505.png" alt="3D World Logo" class="main-logo" style="margin-left: 15px;" />
-    <p>घर बांधण्यापूर्वी अनुभवा प्रत्यक्षात तुमचे घर 3D डिझाईनच्या मदतीने !</p> 
+    <div class="header-content">
+      <img src="/20241021_165505.png" alt="3D World Logo" class="main-logo" />
+     
+      <p>घर बांधण्यापूर्वी अनुभवा प्रत्यक्षात तुमचे घर 3D डिझाईनच्या मदतीने!</p>
+    </div>
   </header>
 
   <section class="poster">
-   <img src="/IMG_20250121_104901[1].jpg" alt="3D World Poster" />
+    <img src="/IMG_20250121_104901[1].jpg" alt="3D World Poster" />
   </section>
 
   <section class="services">
@@ -166,7 +193,7 @@
     <div class="service-grid">
       <div class="service-item">
         <h3>2D Plan</h3>
-        <p>Professional and accurate floor planning with vastushastra.</p>
+        <p>Professional and accurate floor planning.</p>
       </div>
       <div class="service-item">
         <h3>3D Design</h3>
@@ -195,75 +222,36 @@
       <img src="/3.jpg" alt="Design 3" />
       <img src="/4.jpg" alt="Design 4" />
     </div>
-
-    <!-- More Designs Button -->
     <div style="margin-top: 2rem;">
       <a href="more-designs.html" class="show-more-btn">View More Designs</a>
     </div>
-
   </section>
 
-
-   <section class="gallery">
-    <h2>2D Plan Gallery</h2>
+  <section class="gallery">
+    <h2>2D Plane Gallery</h2>
     <div class="gallery-grid">
-      <img src="/2D/1.jpg" alt="Design 1" />
-      <img src="/2D/2.jpg" alt="Design 2" />
-      <img src="/2D/3.jpg" alt="Design 3" />
-      <img src="/2D/4.jpg" alt="Design 4" />
+      <img src="/2D/1.jpg" alt="2D Design 1" />
+      <img src="/2D/2.jpg" alt="2D Design 2" />
+      <img src="/2D/3.jpg" alt="2D Design 3" />
+      <img src="/2D/4.jpg" alt="2D Design 4" />
     </div>
-
-    <!-- More Designs Button -->
     <div style="margin-top: 2rem;">
-      <a href="2D-more-designs.html" class="show-more-btn">View More Plan</a>
+      <a href="2D-more-designs.html" class="show-more-btn">View More Plane</a>
     </div>
-
   </section>
 
-
-    <section class="gallery">
-    <h2> Line Out Gallery</h2>
+  <section class="gallery">
+    <h2>Cut Views</h2>
     <div class="gallery-grid">
-     <img src="/2D/7.jpg" alt="Design 7">
-      <img src="/2D/8.jpg" alt="Design 8">
+      <img src="/cut_view/1.jpg" alt="Cut View 1" />
+      <img src="/cut_view/2.jpg" alt="Cut View 2" />
     </div>
-      
   </section>
-
-   <section class="gallery">
-    <h2>Cut views</h2>
-    <div class="gallery-grid">
-      <img src="/cut_view/1.jpg" alt="Design 1" />
-      <img src="/cut_view/2.jpg" alt="Design 2" />
-  
-    </div>
-
-    <!-- More Designs Button
-    <div style="margin-top: 2rem;">
-      <a href="2D-more-designs.html" class="show-more-btn">View More Designs</a>
-    </div> -->
-
-  </section>
-
 
   <footer>
-    <p>Contact: 8999954374 </p>
+    <p>Contact: 8999954374</p>
     <p>&copy; 2025 3D WORLD – All rights reserved.</p>
   </footer>
 
-  <!-- Toggle script -->
-  <script>
-    function toggleMoreDesigns() {
-      const moreSection = document.getElementById("more-designs");
-      const btn = document.querySelector(".show-more-btn");
-      if (moreSection.style.display === "none") {
-        moreSection.style.display = "block";
-        btn.textContent = "Show Less Designs";
-      } else {
-        moreSection.style.display = "none";
-        btn.textContent = "View More Designs";
-      }
-    }
-  </script>
 </body>
 </html>
