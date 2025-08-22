@@ -34,7 +34,8 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       animation: slideDown 1s ease-in-out;
     }
-    .brand-title {
+    /* Main Title */
+    .main-title {
       font-size: 3rem;
       font-weight: 800;
       letter-spacing: 2px;
@@ -45,6 +46,45 @@
       background-clip: text;
       animation: shine 4s linear infinite;
     }
+
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+    /* Sub Title */
+    .sub-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #f2f2f2;
+      letter-spacing: 1px;
+     background: linear-gradient(90deg, #fff, var(--accent), #fff);
+      background-size: 200% auto;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: shine 4s linear infinite;
+    }
+
+    /* Thin underline for sub-title */
+    .sub-title::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 2px;
+      background: var(--accent);
+      margin: 0.3rem auto 0;
+      border-radius: 2px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      font-weight: 400;
+      color: #ddd;
+    }
+
     .subtitle {
       font-size: 1.1rem;
       margin-top: 0.6rem;
@@ -201,9 +241,9 @@
 </head>
 <body>
 
-  <header>
-    <h1 class="brand-title">BUILD△NGLE</h1>
-      <h1 class="brand-title">DESIGN SOLUTION</h1>
+<header>
+    <h1 class="main-title">BUILD△NGLE</h1>
+    <h2 class="sub-title">DESIGN SOLUTION</h2>
     <p class="subtitle">घर बांधण्यापूर्वी अनुभवा प्रत्यक्षात तुमचे घर 3D डिझाईनच्या मदतीने!</p>
   </header>
 
@@ -280,7 +320,7 @@
 
   <footer>
     <p>Contact: 8999954374</p>
-    <p>&copy; 2025 3D WORLD – All rights reserved.</p>
+    <p>&copy; BUILD△NGLE & DESIGN SOLUTION – All rights reserved.</p>
   </footer>
 
 </body>
